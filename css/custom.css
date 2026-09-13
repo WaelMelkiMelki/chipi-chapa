@@ -5371,3 +5371,159 @@
   margin: 0 auto;
   max-width: 92%;
 }
+
+/* --- Backup B4 calibration & threshold trade-offs --------------------------------------- */
+
+.backup-slide.b4 .pill {
+  background: #f5f7fa;
+  border-left: 3px solid var(--brand-navy);
+  border-radius: 4px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.backup-slide.b4 .pill .p-key {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-red);
+  margin-bottom: 0.15rem;
+}
+
+.backup-slide.b4 .pill .p-val {
+  display: block;
+  font-size: 0.7rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.backup-slide.b4 .cm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  color: #333;
+}
+
+.backup-slide.b4 .cm-table th,
+.backup-slide.b4 .cm-table td {
+  padding: 0.35rem 0.6rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e6eb;
+}
+
+.backup-slide.b4 .cm-table thead th {
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.68rem;
+}
+
+.backup-slide.b4 .cm-table td:first-child {
+  background: #f5f7fa;
+  font-weight: 700;
+  color: var(--brand-navy);
+  text-align: left;
+  font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+  font-size: 0.7rem;
+}
+
+.backup-slide.b4 .cm-table td.tp {
+  background: #f1f8f4;
+  font-weight: 800;
+  color: #1f8a4c;
+}
+
+.backup-slide.b4 .cm-table td.fn {
+  background: #fff5f6;
+  color: var(--brand-red);
+}
+
+.backup-slide.b4 .cm-table td.fp {
+  background: #fbf6ec;
+  color: #8a5b12;
+}
+
+.backup-slide.b4 .cm-table td.tn {
+  background: #f5f7fa;
+}
+
+.backup-slide.b4 .cm-caption {
+  display: block;
+  font-size: 0.68rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+.backup-slide.b4 .thr-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+.backup-slide.b4 .thr-table thead th {
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.28rem 0.55rem;
+  text-align: left;
+  font-size: 0.68rem;
+}
+
+.backup-slide.b4 .thr-table tbody td {
+  padding: 0.28rem 0.55rem;
+  border-bottom: 1px solid #e2e6eb;
+}
+
+.backup-slide.b4 .thr-table tbody tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+.backup-slide.b4 .thr-table tr.choose td {
+  background: #e8f5ee !important;
+  color: #1a5030;
+  font-weight: 700;
+}
+
+.backup-slide.b4 .economics-band {
+  background: var(--brand-navy);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.55rem 1rem 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.backup-slide.b4 .economics-band .lead {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  opacity: 0.85;
+  margin-bottom: 0.15rem;
+}
+
+.backup-slide.b4 .economics-band .main {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.backup-slide.b4 .footer-note {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 92%;
+}
