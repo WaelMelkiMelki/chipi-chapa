@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>AI-Driven 5G FWA Planning — SUP'COM × Huawei | Defense Deck</title>
+
+    <!-- Reveal.js 5.x core styles (pinned CDN, see README for versions) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/white.css"
+      id="theme"
+    />
+    <!-- Plugin styles: code highlighting + slide menu -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/monokai.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css"
+    />
+    <!-- Optional webfont: degrades gracefully to the system stack offline -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <!-- Project branding layer: tune CSS variables here, never the theme above -->
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Cover slide (placeholder). One <section> per file in slides/.
+             data-separator="---"  -> next horizontal slide
+             data-separator-vertical="--" -> next vertical slide
+             data-separator-notes="^Note:" -> speaker notes (press S) -->
+        <section
+          data-markdown="slides/00-cover.md"
+          data-separator="^---$"
+          data-separator-vertical="^--$"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+        <!-- Future slides: append one <section data-markdown="slides/NN-*.md" ...> per file. -->
+      </div>
+    </div>
+
+    <footer class="deck-footer" aria-hidden="true">
+      5G FWA Planning — SUP'COM × Huawei
+    </footer>
+
+    <!-- Reveal.js 5.x core + plugins (pinned CDN, see README for versions) -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/search/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/zoom/zoom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@11.15.0/plugin/mermaid/mermaid.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        progress: true,
+        controls: true,
+        transition: 'slide',
+        width: 1280,
+        height: 720,
+        margin: 0.05,
+        // Order matters: Markdown must precede Mermaid so diagrams embedded
+        // in .md files exist in the DOM before the Mermaid plugin renders them.
+        plugins: [
+          RevealMarkdown,
+          RevealNotes,
+          RevealHighlight,
+          RevealMath.KaTeX,
+          RevealSearch,
+          RevealZoom,
+          RevealMenu,
+          RevealMermaid
+        ]
+      });
+    </script>
+  </body>
+</html>

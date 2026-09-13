@@ -1,0 +1,133 @@
+/* ==========================================================================
+   chipi-chapa — branding layer for the Reveal.js defense deck
+   --------------------------------------------------------------------------
+   This file sits ON TOP of the neutral base theme (white.css). Tune the
+   branding variables below; never edit the vendored theme itself.
+   ========================================================================== */
+
+:root {
+  --brand-red: #cf0a2c; /* Huawei */
+  --brand-navy: #003366; /* Carthage / SUP'COM */
+  --brand-accent: #0a66c2; /* links, highlights */
+  --neutral-bg: #ffffff;
+  --neutral-text: #1a1a1a;
+
+  --font-stack: 'Inter', 'Roboto', system-ui, -apple-system, 'Segoe UI',
+    sans-serif;
+  --code-font-stack: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular,
+    Menlo, Consolas, monospace;
+}
+
+/* --- Base ---------------------------------------------------------------- */
+
+.reveal {
+  font-family: var(--font-stack);
+  background-color: var(--neutral-bg);
+  color: var(--neutral-text);
+}
+
+/* --- Slide titles --------------------------------------------------------- */
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: var(--font-stack);
+  color: var(--brand-navy);
+  text-transform: none; /* keep academic titles as written */
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.reveal h1 {
+  font-size: 1.9em;
+  font-weight: 700;
+}
+
+.reveal h2 {
+  font-weight: 700;
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.15em;
+}
+
+.reveal h3 {
+  font-weight: 600;
+  color: #334155; /* slate-700: softer than navy for subtitles */
+}
+
+/* --- Links, lists, code ---------------------------------------------------- */
+
+.reveal a {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.reveal a:hover {
+  color: var(--brand-navy);
+}
+
+.reveal ul,
+.reveal ol {
+  line-height: 1.45;
+}
+
+.reveal pre code {
+  font-family: var(--code-font-stack);
+  max-height: 480px;
+}
+
+/* --- Reveal chrome: progress bar, slide number, controls ------------------- */
+
+.reveal .progress span {
+  background: var(--brand-red);
+}
+
+.reveal .slide-number {
+  font-family: var(--font-stack);
+  font-size: 14px;
+  color: var(--brand-navy);
+  background: transparent;
+}
+
+.reveal .controls {
+  color: var(--brand-navy);
+}
+
+/* --- Mermaid diagrams ------------------------------------------------------- */
+
+.reveal .mermaid {
+  display: flex;
+  justify-content: center;
+}
+
+.reveal .mermaid svg {
+  max-width: 100%;
+  max-height: 520px;
+}
+
+/* --- Persistent deck footer ------------------------------------------------- */
+
+.deck-footer {
+  position: fixed;
+  left: 18px;
+  bottom: 12px;
+  z-index: 30;
+  max-width: 60vw;
+  padding-left: 10px;
+  border-left: 3px solid var(--brand-red);
+  font-family: var(--font-stack);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+  pointer-events: none; /* never steal clicks from Reveal controls */
+}
+
+/* Keep PDF/print export clean: no fixed chrome on printed pages. */
+@media print {
+  .deck-footer {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "chipi-chapa",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reveal.js 5.x defense deck — AI-Driven 5G FWA Planning and Fixed Broadband Migration Strategy with Digital Service Monetization (SUP'COM x Huawei Northern Africa).",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1 .",
+    "build:pdf": "echo \"[build:pdf] Requires 'npm start' running on :8000. Printing http://localhost:8000/?print-pdf to chipi-chapa.pdf ...\" && ( google-chrome --headless --disable-gpu --no-sandbox --print-to-pdf=chipi-chapa.pdf \"http://localhost:8000/?print-pdf\" || chromium --headless --disable-gpu --no-sandbox --print-to-pdf=chipi-chapa.pdf \"http://localhost:8000/?print-pdf\" ) && echo \"[build:pdf] Wrote chipi-chapa.pdf\" && ls -la chipi-chapa.pdf"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
