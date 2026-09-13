@@ -5850,3 +5850,62 @@
   margin: 0 auto;
   max-width: 92%;
 }
+
+/* --- Backup B7 data quality plot reference ------------------------------------------------ */
+
+.backup-slide.b7 .ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.7rem;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+
+.backup-slide.b7 .ref-table thead th {
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.3rem 0.55rem;
+  text-align: left;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+}
+
+.backup-slide.b7 .ref-table tbody td {
+  padding: 0.32rem 0.55rem;
+  border-bottom: 1px solid #e2e6eb;
+  vertical-align: top;
+  line-height: 1.35;
+}
+
+.backup-slide.b7 .ref-table tbody tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+.backup-slide.b7 .ref-table td.sig {
+  font-weight: 700;
+  color: var(--brand-navy);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.backup-slide.b7 .ref-table td.rule {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.66rem;
+  color: #333;
+}
+
+.backup-slide.b7 .ref-table td.post {
+  color: #1a5030;
+  font-weight: 600;
+}
+
+.backup-slide.b7 .footer-note {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 92%;
+}
