@@ -2588,3 +2588,252 @@
   margin: 0.4rem auto 0;
   max-width: 94%;
 }
+
+/* --- Eligibility & hard stops slide (slide 19) ---------------------------------- */
+
+.eligibility-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.eligibility-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.eligibility-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.95rem;
+}
+
+.eligibility-slide .arch-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: nowrap;
+  margin: 0.3rem 0 1rem;
+}
+
+.eligibility-slide .arch-strip .arch-pill {
+  font-size: 0.72rem;
+  padding: 0.28rem 0.65rem;
+  background: #f5f7fa;
+  border: 1px solid #c6cfda;
+  border-radius: 12px;
+  color: var(--brand-navy);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.eligibility-slide .arch-strip .arch-pill.step-penalty {
+  background: #fff5f6;
+  border-color: var(--brand-red);
+  color: var(--brand-red);
+}
+
+.eligibility-slide .arch-strip .arch-arrow {
+  font-size: 0.9rem;
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+.eligibility-slide .hs-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.eligibility-slide .hs-card {
+  background: #ffffff;
+  border: 1px solid #e2e6eb;
+  border-top: 3px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.7rem 0.85rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  position: relative;
+}
+
+.eligibility-slide .hs-card.p1 {
+  border-top-color: #c08a2e;
+  background: #fbf6ec;
+}
+
+.eligibility-slide .hs-card.p2 {
+  border-top-color: var(--brand-red);
+  background: #fff5f6;
+}
+
+.eligibility-slide .hs-card.p3 {
+  border-top-color: #1f8a4c;
+  background: #f1f8f4;
+}
+
+.eligibility-slide .hs-card .priority-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: var(--brand-navy);
+  padding: 0.14rem 0.45rem;
+  border-radius: 3px;
+  align-self: flex-start;
+}
+
+.eligibility-slide .hs-card.p1 .priority-badge {
+  background: #c08a2e;
+}
+
+.eligibility-slide .hs-card.p2 .priority-badge {
+  background: var(--brand-red);
+}
+
+.eligibility-slide .hs-card.p3 .priority-badge {
+  background: #1f8a4c;
+}
+
+.eligibility-slide .hs-card .headline {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin: 0.15rem 0 0;
+}
+
+.eligibility-slide .hs-card .condition {
+  display: block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  color: #333;
+  background: #edf1f5;
+  padding: 0.18rem 0.4rem;
+  border-radius: 3px;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.eligibility-slide .hs-card .reason-code {
+  display: block;
+  font-size: 0.7rem;
+  color: #666;
+  font-style: italic;
+}
+
+.eligibility-slide .hs-card .count {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  line-height: 1.1;
+  margin-top: 0.15rem;
+}
+
+.eligibility-slide .hs-card.p1 .count {
+  color: #8a5b12;
+}
+
+.eligibility-slide .hs-card.p3 .count {
+  color: #1f8a4c;
+}
+
+.eligibility-slide .hs-card .rationale {
+  display: block;
+  font-size: 0.72rem;
+  color: #444;
+  line-height: 1.35;
+  margin-top: 0.15rem;
+}
+
+.eligibility-slide .funnel-bar {
+  display: flex;
+  height: 28px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #e2e6eb;
+  margin-bottom: 0.4rem;
+}
+
+.eligibility-slide .funnel-bar .seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.eligibility-slide .funnel-bar .seg.excluded {
+  background: var(--brand-red);
+  flex: 78.8;
+}
+
+.eligibility-slide .funnel-bar .seg.eligible {
+  background: #1f8a4c;
+  flex: 21.2;
+}
+
+.eligibility-slide .funnel-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 0.74rem;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.eligibility-slide .funnel-legend .leg-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.eligibility-slide .funnel-legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.eligibility-slide .funnel-legend .dot.excluded {
+  background: var(--brand-red);
+}
+
+.eligibility-slide .funnel-legend .dot.eligible {
+  background: #1f8a4c;
+}
+
+.eligibility-slide .funnel-legend .count {
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+.eligibility-slide .funnel-caption {
+  display: block;
+  font-size: 0.68rem;
+  font-style: italic;
+  color: #777;
+  text-align: center;
+  margin-bottom: 0.65rem;
+}
+
+.eligibility-slide .key-insight {
+  display: block;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  line-height: 1.35;
+  margin: 0 auto;
+  max-width: 94%;
+}
