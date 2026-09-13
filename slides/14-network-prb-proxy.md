@@ -4,22 +4,21 @@
 
 <span class="subtitle">Baseline RAN state: mean PRB ≈ 20%, P95 median ≈ 34%, absolute max 74.68% — below the 80% planning cap.</span>
 
-<!-- Gauge geometry note: track children (fill/reserved) use spec positioning as-is.
-     Markers, cap line/label and buffer bracket are gauge-wrap children with inline
-     top corrections (see reply §8): the spec's track-relative offsets would otherwise
-     be clipped by .gauge-track's overflow:hidden. Font sizes, colors and the
-     left:% scale positions are exactly per spec. -->
+<!-- Gauge geometry: fill and reserved zone are track children; markers, cap
+     line/label and buffer bracket are gauge-wrap children positioned from
+     custom.css (wrap-child placement avoids clipping by the track's
+     overflow:hidden). Marker scale positions (left:%) live in custom.css. -->
 <div class="gauge-wrap">
 <div class="gauge-track">
 <div class="gauge-fill"></div>
-<div class="gauge-reserved" style="display: flex; align-items: center; justify-content: center;"><span style="font-size: 0.62rem; font-weight: 700; color: #B03040; white-space: nowrap;">Reserved headroom</span></div>
+<div class="gauge-reserved"><span class="zone-label">Reserved headroom</span></div>
 </div>
-<div class="gauge-marker" style="left: 20.29%; top: calc(2.6rem - 6px); height: 30px;"><span class="m-label">Mean 20.29%</span></div>
-<div class="gauge-marker" style="left: 33.97%; top: calc(2.6rem - 6px); height: 30px; width: 3px;"><span class="m-label">Median of cell P95s · 33.97%</span></div>
-<div class="gauge-marker" style="left: 74.68%; top: calc(2.6rem - 6px); height: 30px; background: var(--brand-red); width: 3px;"><span class="m-label" style="transform: translateX(-100%);">Max 74.68%</span></div>
-<div class="gauge-cap-line" style="top: calc(2.6rem - 8px); height: 34px;"></div>
-<div class="gauge-cap-label" style="top: 0;">80% hard cap</div>
-<div class="gauge-buffer" style="top: calc(2.6rem + 29px);"><span class="b-label">5.32 pp buffer</span></div>
+<div class="gauge-marker"><span class="m-label">Mean 20.29%</span></div>
+<div class="gauge-marker is-p95"><span class="m-label">Median of cell P95s · 33.97%</span></div>
+<div class="gauge-marker is-max"><span class="m-label">Max 74.68%</span></div>
+<div class="gauge-cap-line"></div>
+<div class="gauge-cap-label">80% hard cap</div>
+<div class="gauge-buffer"><span class="b-label">5.32 pp buffer</span></div>
 <div class="gauge-scale"><span>0%</span><span>50%</span><span>100%</span></div>
 </div>
 
