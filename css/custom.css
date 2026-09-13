@@ -391,3 +391,119 @@
   color: #999;
   font-style: italic;
 }
+
+/* --- Context & engineering problem slide (slide 03) ---------------------------- */
+
+.context-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.context-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.context-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.3rem;
+}
+
+.context-slide .columns {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.context-slide .col-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand-red);
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.context-slide .anchor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+.context-slide .anchor-card {
+  background: #f5f7fa;
+  border-left: 3px solid var(--brand-navy);
+  border-radius: 4px;
+  padding: 0.7rem 0.85rem;
+}
+
+.context-slide .anchor-card strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.15rem;
+}
+
+.context-slide .anchor-card span {
+  display: block;
+  font-size: 0.78rem;
+  color: #444;
+  line-height: 1.35;
+}
+
+.context-slide .dimension {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  margin-bottom: 0.55rem;
+}
+
+.context-slide .dimension:last-child {
+  margin-bottom: 0;
+}
+
+.context-slide .dimension .idx {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  background: var(--brand-red);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+
+.context-slide .dimension .body strong {
+  display: block;
+  color: var(--brand-navy);
+  font-size: 0.98rem;
+  margin-bottom: 0.1rem;
+}
+
+.context-slide .dimension .body span {
+  display: block;
+  font-size: 0.8rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.context-slide .bottom-strip {
+  margin-top: 1.2rem;
+  padding: 0.7rem 1rem;
+  background: var(--brand-navy);
+  color: #fff;
+  font-size: 0.92rem;
+  font-style: italic;
+  border-radius: 4px;
+  text-align: center;
+}
