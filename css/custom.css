@@ -3844,3 +3844,252 @@
   font-weight: 600;
   line-height: 1.4;
 }
+
+/* --- Two-tier recommendation engine slide (slide 24) -------------------------------- */
+
+.recommendation-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.recommendation-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.recommendation-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.9rem;
+}
+
+.recommendation-slide .block-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+}
+
+.recommendation-slide .tier1-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.recommendation-slide .tier1-pill {
+  background: #f5f7fa;
+  border-left: 3px solid var(--brand-navy);
+  border-radius: 4px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.recommendation-slide .tier1-pill .t1-route {
+  font-weight: 700;
+  color: var(--brand-navy);
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+}
+
+.recommendation-slide .tier1-pill .t1-count {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+.recommendation-slide .rule-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.recommendation-slide .rule-card {
+  background: #ffffff;
+  border: 1px solid #e2e6eb;
+  border-top: 3px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+}
+
+.recommendation-slide .rule-card.green {
+  border-top-color: #1f8a4c;
+}
+
+.recommendation-slide .rule-card.red {
+  border-top-color: var(--brand-red);
+}
+
+.recommendation-slide .rule-card .rule-name {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-bottom: 0.1rem;
+}
+
+.recommendation-slide .rule-card .rule-cond {
+  display: block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  color: #333;
+  background: #edf1f5;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  align-self: flex-start;
+}
+
+.recommendation-slide .rule-card .rule-offer {
+  display: block;
+  font-size: 0.74rem;
+  color: #333;
+  line-height: 1.3;
+}
+
+.recommendation-slide .rule-card .rule-offer strong {
+  color: var(--brand-navy);
+}
+
+.recommendation-slide .rule-card .rule-hit {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--brand-red);
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  margin-top: 0.15rem;
+}
+
+.recommendation-slide .offer-bar {
+  display: flex;
+  height: 26px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #e2e6eb;
+  margin-bottom: 0.4rem;
+}
+
+.recommendation-slide .offer-bar .seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.66rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recommendation-slide .offer-bar .seg.base {
+  background: #b0b7c0;
+  flex: 65.3;
+}
+
+.recommendation-slide .offer-bar .seg.iptv {
+  background: #1f8a4c;
+  flex: 18.6;
+}
+
+.recommendation-slide .offer-bar .seg.conv {
+  background: var(--brand-navy);
+  flex: 12.8;
+}
+
+.recommendation-slide .offer-bar .seg.multi {
+  background: var(--brand-red);
+  flex: 2.1;
+}
+
+.recommendation-slide .offer-bar .seg.game {
+  background: #c08a2e;
+  flex: 1.3;
+}
+
+.recommendation-slide .offer-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  color: #333;
+}
+
+.recommendation-slide .offer-legend .leg-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.recommendation-slide .offer-legend .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.recommendation-slide .offer-legend .dot.base {
+  background: #b0b7c0;
+}
+
+.recommendation-slide .offer-legend .dot.iptv {
+  background: #1f8a4c;
+}
+
+.recommendation-slide .offer-legend .dot.conv {
+  background: var(--brand-navy);
+}
+
+.recommendation-slide .offer-legend .dot.multi {
+  background: var(--brand-red);
+}
+
+.recommendation-slide .offer-legend .dot.game {
+  background: #c08a2e;
+}
+
+.recommendation-slide .offer-legend .count {
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+.recommendation-slide .insight-band {
+  background: var(--brand-navy);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.55rem 1rem 0.65rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.recommendation-slide .insight-band .lead {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+}
+
+.recommendation-slide .insight-band .main {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
