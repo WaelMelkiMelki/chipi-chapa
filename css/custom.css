@@ -202,3 +202,72 @@
   height: 55px;
   width: auto;
 }
+
+/* --- Agenda slide (slide 01) ------------------------------------------------- */
+
+.agenda-slide {
+  text-align: left;
+  padding: 0 3rem;
+}
+
+.agenda-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+.agenda-slide .subtitle {
+  display: block;
+  font-style: italic;
+  /* Size unspecified in spec: 1.1rem keeps the "small" subtitle legible
+     between the ~80px title and the 1.15rem section labels. */
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.agenda-slide ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: agenda;
+}
+
+.agenda-slide ol > li {
+  counter-increment: agenda;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 1.1rem;
+  min-height: 3.2rem;
+}
+
+.agenda-slide ol > li:last-child {
+  margin-bottom: 0;
+}
+
+.agenda-slide ol > li::before {
+  content: counter(agenda, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  line-height: 1;
+}
+
+.agenda-slide ol > li strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.15rem;
+}
+
+.agenda-slide ol > li span {
+  display: block;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.45;
+}
