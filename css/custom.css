@@ -5909,3 +5909,56 @@
   margin: 0 auto;
   max-width: 92%;
 }
+
+/* --- Backup B8 glossary & acronyms ---------------------------------------------------------- */
+
+.backup-slide.b8 .glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin-bottom: 0.6rem;
+}
+
+.backup-slide.b8 .g-item {
+  background: #f5f7fa;
+  border-left: 3px solid var(--brand-navy);
+  border-radius: 4px;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: #333;
+}
+
+.backup-slide.b8 .g-item .g-acr {
+  display: inline-block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-weight: 800;
+  color: var(--brand-navy);
+  font-size: 0.72rem;
+  margin-right: 0.3rem;
+}
+
+.backup-slide.b8 .g-item .g-exp {
+  display: block;
+  font-size: 0.68rem;
+  color: #333;
+  margin-top: 0.05rem;
+}
+
+.backup-slide.b8 .g-item .g-ctx {
+  display: block;
+  font-size: 0.62rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.05rem;
+}
+
+.backup-slide.b8 .footer-note {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 92%;
+}
