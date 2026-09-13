@@ -5527,3 +5527,140 @@
   margin: 0 auto;
   max-width: 92%;
 }
+
+/* --- Backup B5 capacity simulation assumptions ------------------------------------------ */
+
+.backup-slide.b5 .formula-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: nowrap;
+  margin: 0.35rem 0 0.9rem;
+}
+
+.backup-slide.b5 .formula-strip .fs-step {
+  background: #f5f7fa;
+  border: 1px solid #c6cfda;
+  border-radius: 12px;
+  padding: 0.22rem 0.65rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  color: var(--brand-navy);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.backup-slide.b5 .formula-strip .fs-arrow {
+  font-size: 0.85rem;
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+.backup-slide.b5 .two-col {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.backup-slide.b5 .asm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backup-slide.b5 .asm-list li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.backup-slide.b5 .asm-list .asm-idx {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.62rem;
+  border-radius: 50%;
+  margin-top: 0.1rem;
+}
+
+.backup-slide.b5 .sens-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  color: #333;
+}
+
+.backup-slide.b5 .sens-table thead th {
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.28rem 0.55rem;
+  text-align: left;
+  font-size: 0.68rem;
+}
+
+.backup-slide.b5 .sens-table tbody td {
+  padding: 0.28rem 0.55rem;
+  border-bottom: 1px solid #e2e6eb;
+}
+
+.backup-slide.b5 .sens-table tbody tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+.backup-slide.b5 .sens-table td.pct {
+  font-weight: 800;
+  color: var(--brand-navy);
+}
+
+.backup-slide.b5 .sens-table td.status {
+  color: #1f8a4c;
+  font-weight: 700;
+  font-size: 0.68rem;
+}
+
+.backup-slide.b5 .boundary-band {
+  background: #fbf6ec;
+  border: 1px solid #c08a2e;
+  border-radius: 4px;
+  padding: 0.55rem 1rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.backup-slide.b5 .boundary-band .lead {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #8a5b12;
+  margin-bottom: 0.2rem;
+}
+
+.backup-slide.b5 .boundary-band .main {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #8a5b12;
+  line-height: 1.4;
+}
+
+.backup-slide.b5 .footer-note {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 92%;
+}
