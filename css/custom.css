@@ -711,3 +711,95 @@
   font-style: italic;
   margin-top: 0.5rem;
 }
+
+/* --- End-to-end pipeline overview slide (slide 07) ----------------------------- */
+
+.pipeline-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.pipeline-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.pipeline-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.6rem;
+}
+
+.pipeline-slide .flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.45rem;
+  margin: 2rem 0 1.8rem;
+}
+
+.pipeline-slide .stage {
+  flex: 1 1 0;
+  min-width: 130px;
+  max-width: 175px;
+  background: #f5f7fa;
+  border-top: 3px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.7rem 0.6rem 0.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pipeline-slide .stage:last-of-type {
+  border-top-color: var(--brand-red);
+  background: #fff5f6;
+}
+
+.pipeline-slide .stage .idx {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  letter-spacing: 0.05em;
+}
+
+.pipeline-slide .stage strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--brand-navy);
+  line-height: 1.2;
+}
+
+.pipeline-slide .stage span.gloss {
+  display: block;
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.35;
+}
+
+.pipeline-slide .arrow {
+  align-self: center;
+  font-size: 1.4rem;
+  color: var(--brand-red);
+  font-weight: 700;
+  padding: 0 0.1rem;
+  flex: 0 0 auto;
+}
+
+.pipeline-slide .philosophy {
+  margin-top: 0.4rem;
+  padding: 0.75rem 1.2rem;
+  background: var(--brand-navy);
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.92rem;
+  border-radius: 4px;
+}
