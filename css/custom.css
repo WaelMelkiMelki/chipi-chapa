@@ -667,3 +667,47 @@
 .mermaid text {
   font-family: 'Inter', 'Roboto', system-ui, sans-serif;
 }
+
+/* --- Dataset overview slide (slide 06) ---------------------------------------- */
+
+.dataset-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.dataset-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.dataset-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.dataset-slide .mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem auto 0;
+  max-width: 96%;
+}
+
+.dataset-slide .mermaid svg {
+  max-height: 430px !important;
+  height: auto !important;
+}
+
+.dataset-slide .caption {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
