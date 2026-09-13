@@ -131,3 +131,74 @@
     display: none;
   }
 }
+
+/* --- Cover slide (slide 00) -------------------------------------------------- */
+
+.cover-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cover-slide p {
+  margin: 0.5rem 0; /* keep flex column within the 720px slide */
+}
+
+.cover-slide h1 {
+  /* em, not rem: resolves against Reveal's 42px slide context (~88px title).
+     2.1rem would resolve against the 16px page root (~34px) — smaller than
+     body text. See reply for rationale. */
+  font-size: 2.1em;
+  line-height: 1.25;
+  color: var(--brand-navy);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.cover-slide .top-strip {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--brand-red);
+}
+
+.cover-slide .subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+.cover-slide .institutional {
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--brand-navy);
+}
+
+.cover-slide .partnership {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.cover-slide .supervisors {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.cover-slide .logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.cover-slide .logos-row img {
+  height: 55px;
+  width: auto;
+}
