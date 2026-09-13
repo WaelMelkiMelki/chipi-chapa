@@ -4926,3 +4926,83 @@
   max-width: 92%;
   margin: 0.4rem auto 0;
 }
+
+/* --- Thank you / close slide (slide 29) ---------------------------------------------- */
+
+.thankyou-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0.8rem 2rem 0.4rem;
+}
+
+.thankyou-slide .top-strip {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brand-red);
+  margin: 0;
+}
+
+.thankyou-slide h1 {
+  font-size: 3.6em;
+  font-weight: 800;
+  color: var(--brand-navy);
+  line-height: 1.05;
+  margin: 0.6rem 0 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.thankyou-slide .qa-line {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--brand-navy);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.thankyou-slide .divider {
+  width: 40%;
+  height: 2px;
+  background: var(--brand-red);
+  border: none;
+  margin: 1rem auto;
+}
+
+.thankyou-slide .ack-block {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.thankyou-slide .ack-block p {
+  margin: 0;
+}
+
+.thankyou-slide .echo-line {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.45;
+  max-width: 78%;
+  margin: 0.8rem auto 0;
+}
+
+.thankyou-slide .logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.thankyou-slide .logos-row img {
+  height: 50px;
+  width: auto;
+}
