@@ -4811,3 +4811,118 @@
   font-weight: 600;
   line-height: 1.4;
 }
+
+/* --- General conclusion slide (slide 28) -------------------------------------------- */
+
+.conclusion-slide {
+  padding: 0 2.8rem;
+  text-align: left;
+}
+
+.conclusion-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.conclusion-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.1rem;
+}
+
+.conclusion-slide .problem-block {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 88%;
+  margin: 0 auto 1.3rem;
+  padding: 0.6rem 0.9rem;
+  border-left: 3px solid var(--brand-red);
+  border-right: 3px solid var(--brand-red);
+  border-radius: 2px;
+}
+
+.conclusion-slide .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.conclusion-slide .col-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.55rem;
+}
+
+.conclusion-slide .c-item {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.conclusion-slide .c-item .c-bullet {
+  color: var(--brand-red);
+  font-size: 1rem;
+  line-height: 1;
+  padding-top: 0.1rem;
+  font-weight: 800;
+}
+
+.conclusion-slide .columns > div:nth-child(2) .c-item .c-bullet {
+  color: var(--brand-navy);
+}
+
+.conclusion-slide .footers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.conclusion-slide .footer-block {
+  background: #f5f7fa;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem 0.6rem;
+}
+
+.conclusion-slide .footer-block .f-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.conclusion-slide .footer-block .f-body {
+  display: block;
+  font-size: 0.72rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.conclusion-slide .closing-line {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  line-height: 1.45;
+  max-width: 92%;
+  margin: 0.4rem auto 0;
+}
