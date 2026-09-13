@@ -2438,3 +2438,146 @@
   margin: 0.5rem auto 0;
   max-width: 92%;
 }
+
+/* --- Analytical base table slide (slide 18) ------------------------------------- */
+
+.abt-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.abt-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.abt-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.95rem;
+}
+
+.abt-slide .convergence {
+  display: grid;
+  grid-template-columns: 1fr 90px 1.4fr;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.abt-slide .source-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.abt-slide .source-chip {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--brand-navy);
+  background: #f5f7fa;
+  border-left: 3px solid var(--brand-navy);
+  padding: 0.28rem 0.6rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.abt-slide .arrow-cone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  color: var(--brand-red);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.abt-slide .abt-banner {
+  background: var(--brand-navy);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.85rem 1rem 0.95rem;
+  text-align: left;
+}
+
+.abt-slide .abt-banner .lead {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+  margin-bottom: 0.35rem;
+}
+
+.abt-slide .abt-banner .stat {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.abt-slide .abt-banner .schema {
+  display: block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  opacity: 0.85;
+  font-style: italic;
+}
+
+.abt-slide .inventory {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.abt-slide .dim-card {
+  background: #f5f7fa;
+  border-radius: 5px;
+  padding: 0.5rem 0.55rem 0.55rem;
+  text-align: center;
+  border-top: 3px solid var(--brand-navy);
+}
+
+.abt-slide .dim-card .dim-name {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.abt-slide .dim-card .dim-count {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.abt-slide .dim-card .dim-sub {
+  display: block;
+  font-size: 0.62rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+.abt-slide .footer-line {
+  text-align: center;
+  font-size: 0.76rem;
+  font-style: italic;
+  color: #666;
+  line-height: 1.35;
+  margin: 0.4rem auto 0;
+  max-width: 94%;
+}
