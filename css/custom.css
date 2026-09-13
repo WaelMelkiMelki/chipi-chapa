@@ -2492,11 +2492,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.05rem;
+  gap: 0.25rem;              /* matches .source-stack gap -> aligned pitch */
   color: var(--brand-red);
-  font-size: 0.85rem;
   font-weight: 700;
   line-height: 1;
+}
+
+.abt-slide .arrow-cone > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;              /* matches .source-chip rendered height */
+  font-size: 0.85rem;
 }
 
 .abt-slide .abt-banner {
