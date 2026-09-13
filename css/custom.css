@@ -5148,3 +5148,75 @@
   margin: 0 auto;
   max-width: 92%;
 }
+
+/* --- Backup B2 algorithm comparison tables -------------------------------------------- */
+
+.backup-slide.b2 .table-block {
+  margin-bottom: 0.8rem;
+}
+
+.backup-slide.b2 .table-title {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.3rem;
+}
+
+.backup-slide.b2 table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.68rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  color: #333;
+}
+
+.backup-slide.b2 thead th {
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.28rem 0.55rem;
+  text-align: left;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+}
+
+.backup-slide.b2 tbody td {
+  padding: 0.28rem 0.55rem;
+  border-bottom: 1px solid #e2e6eb;
+  vertical-align: middle;
+}
+
+.backup-slide.b2 tbody tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+.backup-slide.b2 tbody td:first-child {
+  font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--brand-navy);
+  font-size: 0.7rem;
+}
+
+.backup-slide.b2 td.choose {
+  background: #e8f5ee !important;
+  color: #1a5030;
+  font-weight: 700;
+}
+
+.backup-slide.b2 tr.choose td {
+  background: #e8f5ee !important;
+  color: #1a5030;
+  font-weight: 700;
+}
+
+.backup-slide.b2 .footer-note {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  margin: 0.4rem auto 0;
+  max-width: 92%;
+}
