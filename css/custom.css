@@ -1306,3 +1306,151 @@
   border-radius: 4px;
   font-weight: 600;
 }
+
+/* --- Usage aggregation & device dominance slide (slide 12) --------------------- */
+
+.usage-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.usage-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.usage-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.9rem;
+}
+
+.usage-slide .mini-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.3rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.usage-slide .mini-flow .pill {
+  font-size: 0.78rem;
+  padding: 0.22rem 0.65rem;
+  background: #f5f7fa;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  color: var(--brand-navy);
+  font-weight: 600;
+}
+
+.usage-slide .mini-flow .mini-arrow {
+  font-size: 0.9rem;
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+.usage-slide .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.usage-slide .stat-card {
+  background: #f5f7fa;
+  border-radius: 5px;
+  padding: 0.85rem 1rem 0.9rem;
+  text-align: center;
+  border-top: 3px solid var(--brand-navy);
+}
+
+.usage-slide .stat-card.accent-red {
+  border-top-color: var(--brand-red);
+  background: #fff5f6;
+}
+
+.usage-slide .stat-card .stat-num {
+  display: block;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  line-height: 1.05;
+}
+
+.usage-slide .stat-card.accent-red .stat-num {
+  color: var(--brand-red);
+}
+
+.usage-slide .stat-card .stat-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-top: 0.25rem;
+}
+
+.usage-slide .stat-card.accent-red .stat-label {
+  color: #8a0a20;
+}
+
+.usage-slide .stat-card .stat-sub {
+  display: block;
+  font-size: 0.72rem;
+  color: #666;
+  margin-top: 0.1rem;
+}
+
+.usage-slide .feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.usage-slide .feature-card {
+  background: #ffffff;
+  border: 1px solid #e2e6eb;
+  border-left: 4px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.7rem 0.9rem 0.75rem;
+}
+
+.usage-slide .feature-card h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin: 0 0 0.35rem;
+}
+
+.usage-slide .feature-card .rule {
+  display: block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  color: #333;
+  background: #edf1f5;
+  padding: 0.3rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+}
+
+.usage-slide .feature-card .expl {
+  font-size: 0.78rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.usage-slide .result-band {
+  padding: 0.7rem 1rem;
+  background: var(--brand-navy);
+  color: #fff;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  border-radius: 4px;
+}
