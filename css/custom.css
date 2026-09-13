@@ -5664,3 +5664,189 @@
   margin: 0 auto;
   max-width: 92%;
 }
+
+/* --- Backup B6 household multiplier & uncapped rationale -------------------------------- */
+
+.backup-slide.b6 .two-col {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.backup-slide.b6 .ctx-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backup-slide.b6 .ctx-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.backup-slide.b6 .ctx-list .ctx-key {
+  display: inline-block;
+  font-weight: 800;
+  color: var(--brand-red);
+  margin-right: 0.35rem;
+}
+
+.backup-slide.b6 .pct-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  color: #333;
+}
+
+.backup-slide.b6 .pct-table thead th {
+  background: var(--brand-navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.24rem 0.5rem;
+  text-align: left;
+  font-size: 0.66rem;
+}
+
+.backup-slide.b6 .pct-table tbody td {
+  padding: 0.22rem 0.5rem;
+  border-bottom: 1px solid #e2e6eb;
+}
+
+.backup-slide.b6 .pct-table tbody tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+.backup-slide.b6 .pct-table td:last-child {
+  text-align: right;
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+.backup-slide.b6 .pct-caption {
+  display: block;
+  font-size: 0.68rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.3rem;
+  line-height: 1.35;
+}
+
+.backup-slide.b6 .routing-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.backup-slide.b6 .routing-card {
+  border-radius: 4px;
+  padding: 0.45rem 0.7rem 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.backup-slide.b6 .routing-card.b2b {
+  background: #eaf1f8;
+  border-left: 3px solid var(--brand-navy);
+}
+
+.backup-slide.b6 .routing-card.b2c {
+  background: #f1f8f4;
+  border-left: 3px solid #1f8a4c;
+}
+
+.backup-slide.b6 .routing-card .rc-name {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-bottom: 0.1rem;
+}
+
+.backup-slide.b6 .routing-card.b2c .rc-name {
+  color: #1a5030;
+}
+
+.backup-slide.b6 .routing-caption {
+  display: block;
+  font-size: 0.68rem;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.backup-slide.b6 .top5-strip {
+  padding: 0.5rem 0.7rem 0.55rem;
+  background: #f5f7fa;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.backup-slide.b6 .top5-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  margin-bottom: 0.35rem;
+}
+
+.backup-slide.b6 .top5-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.backup-slide.b6 .top5-chip {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0.3rem 0.4rem;
+  text-align: center;
+  border-left: 3px solid var(--brand-navy);
+  font-size: 0.7rem;
+}
+
+.backup-slide.b6 .top5-chip .t5-rank {
+  display: block;
+  font-size: 0.62rem;
+  color: #666;
+  margin-bottom: 0.1rem;
+}
+
+.backup-slide.b6 .top5-chip .t5-score {
+  display: block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--brand-red);
+}
+
+.backup-slide.b6 .top5-chip .t5-lines {
+  display: block;
+  font-size: 0.66rem;
+  color: #333;
+  margin-top: 0.05rem;
+}
+
+.backup-slide.b6 .top5-note {
+  display: block;
+  font-size: 0.68rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.backup-slide.b6 .footer-note {
+  text-align: center;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #777;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 92%;
+}
