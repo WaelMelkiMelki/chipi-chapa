@@ -1454,3 +1454,194 @@
   text-align: center;
   border-radius: 4px;
 }
+
+/* --- Commercial binning via GMM intersection slide (slide 13) ------------------- */
+
+.gmm-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.gmm-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.gmm-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.98rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.gmm-slide .rejection-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.gmm-slide .reject-card {
+  background: #fbf6ec;
+  border-left: 4px solid #c08a2e;
+  border-radius: 5px;
+  padding: 0.6rem 0.85rem 0.65rem;
+}
+
+.gmm-slide .reject-card .badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #8a5b12;
+  background: #f3e4c8;
+  padding: 0.14rem 0.45rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+}
+
+.gmm-slide .reject-card .text {
+  font-size: 0.78rem;
+  color: #333;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.gmm-slide .selected-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #e8f5ee;
+  border: 1px solid #1f8a4c;
+  border-radius: 5px;
+  padding: 0.55rem 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.gmm-slide .selected-banner .badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: #1f8a4c;
+  padding: 0.16rem 0.5rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.gmm-slide .selected-banner .text {
+  font-size: 0.82rem;
+  color: #1a5030;
+  line-height: 1.35;
+}
+
+.gmm-slide .results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gmm-slide .result-card {
+  background: #ffffff;
+  border: 1px solid #e2e6eb;
+  border-top: 3px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.7rem 0.9rem 0.8rem;
+}
+
+.gmm-slide .result-card .card-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin: 0 0 0.5rem;
+  display: block;
+  letter-spacing: 0.02em;
+}
+
+.gmm-slide .result-card .mini-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.7rem;
+  font-size: 0.76rem;
+  margin-bottom: 0.5rem;
+}
+
+.gmm-slide .result-card .mini-table .k {
+  color: #666;
+}
+
+.gmm-slide .result-card .mini-table .v {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  color: #222;
+  font-weight: 600;
+  text-align: right;
+}
+
+.gmm-slide .result-card .band-chip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.74rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.22rem;
+}
+
+.gmm-slide .result-card .band-chip.low {
+  background: #f0f3f7;
+  border-left: 3px solid #888;
+  color: #333;
+}
+
+.gmm-slide .result-card .band-chip.high {
+  background: #fff5f6;
+  border-left: 3px solid var(--brand-red);
+  color: #333;
+}
+
+.gmm-slide .result-card .band-chip .lbl {
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+.gmm-slide .result-card .band-chip .val {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+}
+
+.gmm-slide .formula-band {
+  padding: 0.65rem 1rem 0.75rem;
+  background: var(--brand-navy);
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.gmm-slide .formula-band .lead {
+  display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+  opacity: 0.85;
+  margin-bottom: 0.3rem;
+}
+
+.gmm-slide .formula-band .formula {
+  display: block;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+.gmm-slide .formula-band .trail {
+  display: block;
+  font-size: 0.72rem;
+  font-style: italic;
+  opacity: 0.75;
+}
