@@ -617,3 +617,53 @@
   font-size: 0.9rem;
   margin-bottom: 0.15rem;
 }
+
+/* --- Solution architecture slide (slide 05) ----------------------------------- */
+
+.arch-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.arch-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.arch-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.arch-slide .mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem auto 0;
+  max-width: 92%;
+}
+
+.arch-slide .mermaid svg {
+  max-height: 460px !important;
+  height: auto !important;
+}
+
+.arch-slide .annotation {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+/* Global Mermaid overrides (apply to all present and future diagrams). */
+.mermaid text {
+  font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+}
