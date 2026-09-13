@@ -4662,3 +4662,152 @@
   font-weight: 600;
   line-height: 1.4;
 }
+
+/* --- Integrated results & business readiness slide (slide 27) ------------------------ */
+
+.integrated-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.integrated-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.integrated-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.9rem;
+}
+
+.integrated-slide .funnel-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: nowrap;
+  margin: 0.4rem 0 1rem;
+}
+
+.integrated-slide .fn-chip {
+  background: #f5f7fa;
+  border: 1px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem 0.5rem;
+  text-align: center;
+  min-width: 110px;
+}
+
+.integrated-slide .fn-chip.excluded {
+  border-color: var(--brand-red);
+  background: #fff5f6;
+}
+
+.integrated-slide .fn-chip.final {
+  border-color: #1f8a4c;
+  border-width: 2px;
+  background: #f1f8f4;
+}
+
+.integrated-slide .fn-chip .fn-num {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  line-height: 1.1;
+}
+
+.integrated-slide .fn-chip.excluded .fn-num {
+  color: var(--brand-red);
+}
+
+.integrated-slide .fn-chip.final .fn-num {
+  color: #1f8a4c;
+}
+
+.integrated-slide .fn-chip .fn-lbl {
+  display: block;
+  font-size: 0.62rem;
+  color: #555;
+  margin-top: 0.1rem;
+  line-height: 1.25;
+}
+
+.integrated-slide .fn-arrow {
+  font-size: 0.85rem;
+  color: var(--brand-red);
+  font-weight: 700;
+}
+
+.integrated-slide .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 0.85rem;
+}
+
+.integrated-slide .col-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--brand-navy);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.45rem;
+}
+
+.integrated-slide .bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.integrated-slide .bullet-list > li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.76rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.integrated-slide .bullet-list > li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  color: var(--brand-red);
+  font-weight: 800;
+}
+
+.integrated-slide .bullet-list.guidelines > li::before {
+  content: "▪";
+  color: #c08a2e;
+}
+
+.integrated-slide .closing-band {
+  background: var(--brand-navy);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.55rem 1rem 0.65rem;
+  text-align: center;
+}
+
+.integrated-slide .closing-band .lead {
+  display: block;
+  font-size: 0.7rem;
+  font-style: italic;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+}
+
+.integrated-slide .closing-band .main {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
