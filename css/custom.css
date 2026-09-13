@@ -2299,3 +2299,142 @@
   color: #666;
   margin: 0;
 }
+
+/* --- Service consumption GMM slide (slide 17) ---------------------------------- */
+
+.service-slide {
+  padding: 0 2.5rem;
+  text-align: left;
+}
+
+.service-slide h1 {
+  color: var(--brand-navy);
+  border-bottom: 3px solid var(--brand-red);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.service-slide .subtitle {
+  display: block;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.95rem;
+}
+
+.service-slide .method-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f5f7fa;
+  border-radius: 4px;
+  padding: 0.4rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
+  color: #555;
+}
+
+.service-slide .method-strip .strip-label {
+  font-weight: 700;
+  color: var(--brand-navy);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.service-slide .method-strip .strip-content {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.service-slide .cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.service-slide .result-card {
+  background: #ffffff;
+  border: 1px solid #e2e6eb;
+  border-top: 3px solid var(--brand-navy);
+  border-radius: 5px;
+  padding: 0.75rem 0.9rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.service-slide .result-card .card-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.service-slide .result-card .big-threshold {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  line-height: 1.05;
+  margin: 0.15rem 0 0.05rem;
+}
+
+.service-slide .result-card .vs-midpoint {
+  display: block;
+  font-size: 0.72rem;
+  color: #666;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+}
+
+.service-slide .result-card .variance-note {
+  display: block;
+  font-size: 0.72rem;
+  color: #444;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  margin-top: 0.15rem;
+  padding: 0.18rem 0.45rem;
+  background: #edf1f5;
+  border-radius: 3px;
+  align-self: flex-start;
+}
+
+.service-slide .result-card .flag-chip {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1a5030;
+  background: #e8f5ee;
+  border: 1px solid #1f8a4c;
+  padding: 0.22rem 0.55rem;
+  border-radius: 3px;
+  align-self: flex-start;
+  margin-top: 0.3rem;
+}
+
+.service-slide .result-card .offer-map {
+  display: block;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: #666;
+  line-height: 1.35;
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px dashed #d0d6de;
+}
+
+.service-slide .bottom-line {
+  text-align: center;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #666;
+  line-height: 1.4;
+  margin: 0.5rem auto 0;
+  max-width: 92%;
+}
